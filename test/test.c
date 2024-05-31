@@ -1,6 +1,9 @@
 #include <stdio.h>
 
 int main() {
-  1 + 2;
+  int i = 2;
+  if (i = 0) {
+    printf("Hey\n");
+  }
   return 0;
 }
