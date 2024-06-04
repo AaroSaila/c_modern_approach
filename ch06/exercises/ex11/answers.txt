@@ -1,0 +1,4 @@
+the program sums up all the numbers from 0 to 9 except ones that are not divisible by two
+
+0 + 2 + 4 + 6 + 8
+= 20
