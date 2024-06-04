@@ -27,5 +27,19 @@ int main() {
     commission = 255.0f + .0009f * trade_value;
   }
 
+  if (commission < 39.0f) {
+    commission = 39.0f;
+  }
+  
+  printf("Commission of original broker: $%.2f\n", commission);
+
+  if (share_num < 2000) {
+    commission = 33.0f + 0.03f * share_num;
+  } else {
+    commission = 33.0f + 0.02f * share_num;
+  }
+
+  printf("Commission of competing broker: $%.2f\n", commission);
+
   return 0;
 }
