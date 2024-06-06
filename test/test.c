@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 int main() {
-  int n;
-  scanf("%d", &n);
+  int i;
+  printf("Enter an integer: ");
+  scanf("%d", &i);
+  while (getchar() != '\n');
+  printf("Enter a character: ");
+  char ch = getchar();
 
-  if (n % 2 == 0) {
-    printf("%d is even\n", n);
-  } else {
-    printf("%d is odd\n", n);
-  }
+  printf("%d\n%c\n", i, ch);
 
   return 0;
 }
