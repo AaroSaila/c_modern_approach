@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 int main() {
-  int i;
-  printf("Enter an integer: ");
-  scanf("%d", &i);
-  while (getchar() != '\n');
-  printf("Enter a character: ");
-  char ch = getchar();
+  float f, frac_part;
 
-  printf("%d\n%c\n", i, ch);
+  scanf("%f", &f);
+
+  frac_part = f - (int) f;
+
+  printf("Number: %f\nFrac: %f\n", f, frac_part);
 
   return 0;
 }
