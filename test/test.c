@@ -1,13 +1,10 @@
 #include <stdio.h>
 
 int main() {
-  float f, frac_part;
-
-  scanf("%f", &f);
-
-  frac_part = f - (int) f;
-
-  printf("Number: %f\nFrac: %f\n", f, frac_part);
+  printf("short int: %lu\n", sizeof(short int) * 8);
+  printf("int: %lu\n", sizeof(int) * 8);
+  printf("long int: %lu\n", sizeof(long int) * 8);
+  printf("long long int: %lu\n", sizeof(long long int) * 8);
 
   return 0;
 }
