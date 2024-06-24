@@ -1,10 +1,13 @@
 #include <stdio.h>
 
 int main() {
-  printf("short int: %lu\n", sizeof(short int) * 8);
-  printf("int: %lu\n", sizeof(int) * 8);
-  printf("long int: %lu\n", sizeof(long int) * 8);
-  printf("long long int: %lu\n", sizeof(long long int) * 8);
+  char letter = 'A' - 1;
+  while (1) {
+    letter += 1;
+    if (letter > 'Z')
+      return 0;
+    printf("%c\n", letter);
+  }
 
   return 0;
 }
