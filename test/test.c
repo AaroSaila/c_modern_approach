@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 int main() {
-  printf("%c\n", '0' + 1);
+  srand(time(NULL));
+  printf("%d\n", rand() % 10);
 
   return 0;
 }
