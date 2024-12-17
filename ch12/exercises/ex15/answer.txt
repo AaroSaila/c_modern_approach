@@ -1,0 +1,5 @@
+int* row_ptr = temperatures[i];
+
+for (int *p = row_ptr; p <= row_ptr + 23; p++) {
+  printf("%d ", *p);
+}
