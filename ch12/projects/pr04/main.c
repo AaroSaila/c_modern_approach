@@ -1,6 +1,6 @@
 #include <ctype.h>
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
 
 #define BUF_SIZE 1000
 
@@ -8,19 +8,24 @@ int main() {
   char buf[BUF_SIZE];
 
   printf("Enter a message: ");
-  // get input with getchar
-
-  printf("%s\n", buf);
-
-  char reversed[BUF_SIZE];
-  for (char *r = reversed; p >= buf; p--) {
-    if (isalpha(*p)) {
-      *r = *p;
-      r++;
+  char ch;
+  char *p = buf;
+  while ((ch = getchar()) != '\n') {
+    if (isalpha(ch)) {
+      *p = tolower(ch);
+      p++;
     }
   }
+  *p = '\0';
+  p--;
 
-  printf("%s\n", reversed);
+  char reversed[BUF_SIZE];
+  char *r;
+  for (r = reversed; p >= buf; p--) {
+    *r = *p;
+    r++;
+  }
+  *r = '\0';
 
   if (strcmp(buf, reversed) == 0) {
     printf("Palindrome\n");
