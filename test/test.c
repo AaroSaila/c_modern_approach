@@ -1,7 +1,9 @@
 #include <stdio.h>
-#include <ctype.h>
+#include <string.h>
 
 int main() {
-  printf("%c\n", toupper(','));
-  return 0;
+  char str1[] = "1234";
+  char str2[] = "34";
+
+  printf("%d\n", strcmp(str1 + 2, str2));
 }
