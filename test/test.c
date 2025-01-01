@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-  printf("%c\n", 12);
+  printf("%d\n", strlen("neptune is planet 9") + 1);
 
   return 0;
 }
