@@ -1,8 +1,16 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 int main() {
-  printf("%d\n", strlen("neptune is planet 9") + 1);
+  char str[1000];
+  fgets(str, 1000, stdin);
+  char *p = str;
+
+  for (; *p != '\n'; p++) {
+    putchar(*p);
+  }
+  putchar('\n');
 
   return 0;
 }
