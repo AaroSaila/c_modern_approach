@@ -1,0 +1,11 @@
+int main(void)
+{
+  int a[10], i, j, k, m;
+
+  i = j;
+
+  i = 10 * j + 1;
+
+  i = j - k;
+
+}
