@@ -1,12 +1,13 @@
 #include <stdio.h>
 
+
 int main() {
-  struct {int x, y;} x;
-  struct {int x, y;} y;
-  x.x = 10;
-  x.y = 30;
-  y.x = 1;
-  y.y = 50;
+  enum {FIRST, SECOND} b = FIRST;
+  int i = 2;
+
+  b = i + 1;
+
+  printf("%d\n", b);
 
   return 0;
 }

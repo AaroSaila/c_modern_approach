@@ -9,8 +9,3 @@ typedef enum {
   SATURDAY,
   SUNDAY
 } WEEKDAYS;
-
-int main() {
-
-  return 0;
-}

@@ -1,0 +1,5 @@
+(a) legal, safe
+(b) legal, unsafe since i might be greater than 1
+(c) legal, unsafe since b might be incremented past the highest number declared in the enum (1)
+(d) legal, safe
+(e) legal, safe
