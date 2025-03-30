@@ -1,0 +1,7 @@
+struct {
+  double: 8
+  union: 8 (double is biggest)
+  char[]: 4
+}
+
+8+8+4=20 bytes
